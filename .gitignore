@@ -1,5 +1,0 @@
-repo/**/*
-!repo/**/*.cpp
-!repo/**/*.h
-!repo/**/*.hpp
-!repo/**/Makefile
