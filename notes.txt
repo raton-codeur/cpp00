@@ -1,0 +1,35 @@
+-
+les extensions
+
+.hpp
+.cpp
+.tpp
+-
+
+
+-
+.hpp
+
+définition d'une classe
+-
+
+-
+interdit
+
+C++11
+Boost
+*printf()
+*alloc()
+free()
+using namespace <ns_name>
+friend
+STL
+Containers (vector/list/map/...)
+Algorithmes (include <algorithm>)
+fonction dans un fichier d'en-tête sauf fonction template
+-
+
+
+-
+forme canonique de Coplien
+-
