@@ -2,4 +2,5 @@ repo/**/*
 !repo/*/*.cpp
 !repo/*/*.h
 !repo/*/*.hpp
+!repo/*/*.tpp
 !repo/*/Makefile

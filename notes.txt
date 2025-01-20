@@ -33,3 +33,10 @@ fonction dans un fichier d'en-tête sauf fonction template
 -
 forme canonique de Coplien
 -
+
+
+-
+std::toupper(c) → c en majuscule
+-
+
+
