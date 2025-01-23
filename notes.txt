@@ -45,3 +45,7 @@ std::toupper(c) → c en majuscule
 -
 
 
+
+afficher une chaine sur au moins 10 caractères
+std::cout << std::setw(10) << s;
+il faut inclure #include <iomanip>
