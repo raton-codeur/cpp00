@@ -1,17 +1,6 @@
--
-les extensions
-
-.hpp
-.cpp
-.tpp
--
 
 
--
-.hpp
 
-définition d'une classe
--
 
 -
 interdit
@@ -31,7 +20,23 @@ fonction dans un fichier d'en-tête sauf fonction template
 
 
 -
-forme canonique de Coplien
+classe sous forme canonique de Coplien
+
+C()
+constructeur par défaut
+
+C(const C&)
+constructeur de recopie
+déclaration par recopie d'un autre objet
+utilisé par f(C c) pour faire un objet local à f
+utilisé par le retour d'une fonction, sur la pile
+
+~C
+destructeur
+
+C& operator=(const C&)
+opérateur d'affectation
+dupliquer les valeurs d'un objet dans un autre
 -
 
 

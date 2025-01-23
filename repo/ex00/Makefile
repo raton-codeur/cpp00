@@ -1,6 +1,6 @@
 NAME = megaphone
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = megaphone.cpp
+SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 
 %.o : %.cpp
@@ -26,5 +26,6 @@ test : all
 	./$(NAME) salut
 	./$(NAME) salut toi
 	./$(NAME) "salut toi"
+	make fclean
 
 .PHONY: all clean fclean re test
