@@ -52,6 +52,13 @@ il faut inclure #include <iomanip>
 -
 
 
+
+-
+afficher un nombre sur 2 avec un 0 à gauche
+<< std::setfill('0') << std::setw(2) <<
+-
+
+
 -
 ostringstream
 -
