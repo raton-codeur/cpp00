@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cstdlib>
 
 PhoneBook::PhoneBook() : _numContacts(0)
 {
