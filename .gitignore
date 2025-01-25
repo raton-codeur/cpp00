@@ -1,4 +1,4 @@
-repo/**/*
+repo/*e/*
 !repo/*/*.cpp
 !repo/*/*.h
 !repo/*/*.hpp
