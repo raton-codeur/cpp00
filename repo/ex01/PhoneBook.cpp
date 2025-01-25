@@ -1,6 +1,5 @@
 #include "PhoneBook.hpp"
 #include <iostream>
-#include <string>
 #include <iomanip>
 #include <cstdlib>
 
@@ -55,12 +54,18 @@ static void printField(const std::string& s)
 		std::cout << std::setw(10) << s;
 }
 
+static void printField(int i)
+{
+	std::cout << "|";
+	std::cout << std::setw(10) << i;
+}
+
 void PhoneBook::print() const
 {
 	printHeader();
 	for (int i = 0; i < this->_numContacts && i < MAX_CONTACTS; i++)
 	{
-		printField(std::to_string(i + 1));
+		printField(i + 1);
 		printField(this->_contacts[i].getFirstName());
 		printField(this->_contacts[i].getLastName());
 		printField(this->_contacts[i].getNickname());
