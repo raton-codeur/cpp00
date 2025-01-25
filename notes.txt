@@ -45,7 +45,38 @@ std::toupper(c) → c en majuscule
 -
 
 
-
+-
 afficher une chaine sur au moins 10 caractères
 std::cout << std::setw(10) << s;
 il faut inclure #include <iomanip>
+-
+
+
+-
+ostringstream
+-
+
+
+-
+si on veut forcer l'utilisation d'un constructeur avec paramètre pour la classe C,
+il faut mettre "C();" en privé.
+-
+
+
+-
+time_t, time, localtime
+#include <ctime>
+
+std::put_time
+#include <iomanip>
+
+
+time_t c'est le nombre de secondes écoulées depuis l'epoch
+
+localtime transforme ce nombre de secondes en une structure, appelée généralement tm, et qui contient toutes les informations : l'année, le mois, le jour, l'heure, etc
+
+put_time 
+C'est un manipulateur de flux permettant d'afficher un objet tm dans un format spécifique
+
+cout << std::put_time(tm, "[%Y%m%d_%H%M%S] ");
+-

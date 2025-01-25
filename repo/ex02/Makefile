@@ -1,6 +1,6 @@
 NAME = ex02
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = $(wildcard *.cpp)
+SRCS = main.cpp Account.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 %.o : %.cpp
@@ -19,7 +19,7 @@ fclean : clean
 
 re : fclean all
 
-test : $(NAME)
+test : all
 	./$(NAME)
 	
 .PHONY: all clean fclean re
