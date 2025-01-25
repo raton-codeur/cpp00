@@ -1,15 +1,15 @@
 NAME = phoneBook
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = $(wildcard *.cpp)
+SRCS = main.cpp Contact.cpp PhoneBook.cpp
 OBJS = $(SRCS:.cpp=.o)
+
+all : $(NAME)
 
 %.o : %.cpp
 	c++ $(FLAGS) -c $< -o $@
 
 $(NAME) : $(OBJS)
 	c++ $(FLAGS) $(OBJS) -o $@
-
-all : $(NAME)
 
 clean :
 	rm -f $(OBJS)
