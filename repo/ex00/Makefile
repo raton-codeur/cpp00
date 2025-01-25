@@ -26,6 +26,5 @@ test : all
 	./$(NAME) salut
 	./$(NAME) salut toi
 	./$(NAME) "salut toi"
-	make fclean
 
 .PHONY: all clean fclean re test
