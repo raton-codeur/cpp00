@@ -78,12 +78,23 @@ std::put_time
 #include <iomanip>
 
 
-time_t c'est le nombre de secondes écoulées depuis l'epoch
+time_t		now;
+struct tm*	tm;
+time(&now);
+tm = localtime(&now);
 
-localtime transforme ce nombre de secondes en une structure, appelée généralement tm, et qui contient toutes les informations : l'année, le mois, le jour, l'heure, etc
+dans now on a le nombre de secondes écoulées depuis l'epoch
+localtime transforme ce nombre de secondes en une structure qui contient toutes les informations : l'année, le mois, le jour, l'heure, etc
 
 put_time 
 C'est un manipulateur de flux permettant d'afficher un objet tm dans un format spécifique
-
 cout << std::put_time(tm, "[%Y%m%d_%H%M%S] ");
+
+sinon, à la main :
+1900 + tm->tm_year
+tm->tm_mon + 1
+tm->tm_mday
+tm->tm_hour
+tm->tm_min
+tm->tm_sec
 -
