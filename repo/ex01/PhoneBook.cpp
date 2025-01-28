@@ -99,6 +99,8 @@ void PhoneBook::search() const
 	{
 		std::cout << "index : ";
 		std::getline(std::cin, entry);
+		if (std::cin.eof())
+			exit(0);
 		i = std::atoi(entry.c_str());
 		if (!str_is_digit(entry) || i < 1 || i > this->_numContacts || i > MAX_CONTACTS)
 			std::cout << "invalid index" << std::endl;
