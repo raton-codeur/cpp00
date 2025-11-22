@@ -53,7 +53,11 @@ static void get(std::string& field)
 
 	std::getline(std::cin, entry);
 	if (std::cin.eof())
-		exit(0);
+	{
+		std::cin.clear();
+		field = "";
+		return;
+	}
 	if (!isBlank(entry))
 		field = entry;
 }
